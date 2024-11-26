@@ -13,7 +13,7 @@ class ImportDataView(APIView):
 
     def post(self, request,*args,**kwargs):
         # Ensure the file is included in the request
-        import pdb;pdb.set_trace()
+        # import pdb;pdb.set_trace()
         csv_file = request.FILES.get('file')
         
         platform_name = request.data.get('platform_name')  # Platform (e.g., Flipkart)
